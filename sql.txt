@@ -1,0 +1,10 @@
+CREATE DATABASE movie_rental;
+CREATE TABLE Movie (
+    id int unsigned NOT NULL AUTO_INCREMENT,
+    movie_name varchar(200) NOT NULL,
+    release_year int NOT NULL,
+    price int unsigned NOT NULL,
+    genre enum ('comedy','drama','thriller') not null,
+    rented boolean not null default 0,
+    primary key(id)
+);
